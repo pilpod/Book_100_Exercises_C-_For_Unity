@@ -19,6 +19,7 @@ public class Ex_08 : MonoBehaviour
     {
         // Time.deltaTime : El tiempo en segundos que tardó en completarse el último frame (Read Only).
         // Update + Time.deltaTime fundamental para realizar calculo y movimientos suaves y consistentes
+        // doc: https://docs.unity3d.com/es/530/ScriptReference/Time.html
         float deltaTime = Time.deltaTime;
         Debug.Log($"Tiempo transcurrido desde el fotograma anterior: {deltaTime}");
     }
