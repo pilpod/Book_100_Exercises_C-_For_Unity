@@ -24,10 +24,10 @@ public class Ex_13 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float increaseScale = scaleIncrement * Time.deltaTime;
         float setPosition = fixPosition * Time.deltaTime;
 
-        Vector3 vectorScale = new Vector3(increaseScale, increaseScale, increaseScale);
+        // Using Vector3.one = new Vector3(1,1,1)
+        Vector3 vectorScale = Vector3.one * scaleIncrement * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.Space))
         {
@@ -37,7 +37,8 @@ public class Ex_13 : MonoBehaviour
 
         if (!Input.GetKey(KeyCode.Space) && transform.localScale.y > initialScale)
         {
-            transform.localScale -= vectorScale;
+            // using Vector.Max(Vector3,Vector3)
+            transform.localScale = Vector3.Max(transform.localScale - Vector3.one * scaleIncrement * Time.deltaTime, Vector3.one * initialScale);
             transform.position -= new Vector3(0f, setPosition, 0f);
         }
 
