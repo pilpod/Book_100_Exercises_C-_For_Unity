@@ -12,9 +12,9 @@ public class Ex_14 : MonoBehaviour
     float speed = 3.0f;
 
     // book variables
-    private float minX = 0f;
-    private float maxX = 10f;
-    private int direcion = 1;
+    //private float minX = 0f;
+    //private float maxX = 10f;
+    //private int direcion = 1;
 
     // Start is called before the first frame update
     void Start()
