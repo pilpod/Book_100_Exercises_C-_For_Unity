@@ -20,4 +20,20 @@ public class Ex_19 : MonoBehaviour
     {
         
     }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("Click sobre el objecto");
+        Invoke("DisableObject", RandomTime());
+    }
+
+    private void DisableObject()
+    {
+        gameObject.SetActive(false);
+    }
+
+    private float RandomTime()
+    {
+        return Random.Range(3f, 5f);
+    }
 }
