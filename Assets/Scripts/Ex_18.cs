@@ -19,4 +19,9 @@ public class Ex_18 : MonoBehaviour
     {
         
     }
+
+    private void OnMouseDown()
+    {
+        Destroy(gameObject, 3.0f);
+    }
 }
