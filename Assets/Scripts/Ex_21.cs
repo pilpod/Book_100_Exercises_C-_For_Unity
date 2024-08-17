@@ -14,13 +14,10 @@ public class Ex_21 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 1; i <= 1000; i++)
+        for (int i = 2; i <= 1000; i += 2)
         {
-            if (i % 2 == 0)
-            {
-                sum += i;
-                count++;
-            };
+            sum += i;
+            count++;
         }
 
         Debug.Log(sum);
@@ -30,6 +27,6 @@ public class Ex_21 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
