@@ -487,7 +487,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 22.09418
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -513,13 +513,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17378707, y: -0, z: -0, w: 0.98478323}
-  m_LocalPosition: {x: 2.96, y: 7.98, z: -21.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.05143947, y: 0.03291547, z: 0.000011615988, w: 0.99813354}
+  m_LocalPosition: {x: 7.28, y: 1.44, z: -8.62}
+  m_LocalScale: {x: 0.88385683, y: 0.88385683, z: 0.88385683}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 20.016, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.894, y: 3.788, z: 0.196}
 --- !u!1 &1336844239
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +639,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereToRename: {fileID: 451404640}
+--- !u!1 &1421620851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421620853}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1421620853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421620851}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -648,3 +679,4 @@ SceneRoots:
   - {fileID: 1336844244}
   - {fileID: 316396759}
   - {fileID: 451404644}
+  - {fileID: 1421620853}
