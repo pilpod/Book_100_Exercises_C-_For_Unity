@@ -7,26 +7,18 @@ public class Ex_23 : MonoBehaviour
     /*
      * Instanciar una pared de cubos vertical usando un prefab.
      */
-
-    public List<GameObject> prefabs;
-    private readonly int maxCubePerColumn = 5;
+    public GameObject prefab;
+    private readonly int maxRows = 5;
+    private readonly int maxColumn = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        for (int i = 0; i < maxCubePerColumn; i++)
+        for (int row = 0; row < maxRows; row++)
         {
-            GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            go.transform.position = new Vector3(0, 0.5f + i, 0);
-            prefabs.Add(go);
-        }
-
-        for (int i = 0; i < maxCubePerColumn - 1; i++)
-        {
-            foreach (var cube in prefabs)
+            for (int column = 0; column < maxColumn; column++)
             {
-                Instantiate(cube, new Vector3(cube.transform.position.x + (i+1), cube.transform.position.y, cube.transform.position.z), Quaternion.identity);
+                Instantiate(prefab, new Vector3(row, 0.5f + column, 0), Quaternion.identity);
             }
         }
     }
