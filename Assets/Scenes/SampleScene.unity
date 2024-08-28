@@ -771,10 +771,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421620851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5b83eb78e4d7544fb848eb78e1a4d48, type: 3}
+  m_Script: {fileID: 11500000, guid: 0928e24e68591c34bac3f90def5b5076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1336844239}
+  rockPrefab: {fileID: 4126863686446944420, guid: 6e614a3b6c56c5548baf710f43c1f678, type: 3}
+  groundPrefab: {fileID: 4126863686446944420, guid: 61061b2b6aeecd54e96ca45b387c8797, type: 3}
+  grassPrefab: {fileID: 4126863686446944420, guid: 6d3aafabed2a2954e8ff64e112ca36ee, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
