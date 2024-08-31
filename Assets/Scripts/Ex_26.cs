@@ -16,9 +16,12 @@ public class Ex_26 : MonoBehaviour
     {
         for (int y = 0; y < pyramidHeight; y++)
         {
-            for (float z = (y*0.5f); z < pyramidHeight - (y*0.5f); z++)
+            float levelSize = pyramidHeight - (y * 0.5f);
+            float position = y * 0.5f;
+
+            for (float z = position; z < levelSize; z++)
             {
-                for (float x = (y*0.5f); x < pyramidHeight - (y*0.5f); x++)
+                for (float x = position; x < levelSize; x++)
                 {
                     Vector3 vector = new Vector3(x, y, z);
                     Instantiate(rockPrefab, vector, Quaternion.identity);
