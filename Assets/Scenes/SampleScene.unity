@@ -347,6 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a252f38a9fd9f3458dc7fd3b349e3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sphere2: {fileID: 1165277391}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +546,6 @@ GameObject:
   - component: {fileID: 1165277395}
   - component: {fileID: 1165277394}
   - component: {fileID: 1165277393}
-  - component: {fileID: 1165277392}
   m_Layer: 0
   m_Name: Sphere_2
   m_TagString: Untagged
@@ -553,18 +553,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1165277392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165277391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10f46a5b49e05a345acedfc2ad878a5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &1165277393
 SphereCollider:
   m_ObjectHideFlags: 0
