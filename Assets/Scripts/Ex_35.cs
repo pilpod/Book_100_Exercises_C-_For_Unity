@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,9 +18,13 @@ public class Ex_35 : MonoBehaviour
     private SphereCollider sphereCollider;
     private Rigidbody rb;
 
+    private Renderer rend;
+    private Color originalColor;
+
     // Start is called before the first frame update
     void Start()
     {
+        SetRenderer();
         SetRigidbody();
         SetCollider();
     }
@@ -46,8 +51,30 @@ public class Ex_35 : MonoBehaviour
         rb.useGravity = false;
     }
 
+    private void SetRenderer()
+    {
+        rend = gameObject.GetComponent<Renderer>();
+        originalColor = rend.material.color;
+    }
+
     private void SpeedUpTheFall()
     {
         rb.AddForce(Vector3.down * velocity * rb.mass); // speed up the fall
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "ground")
+        {
+            rend.material.color = Color.blue;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "ground")
+        {
+            rend.material.color = originalColor;
+        }
     }
 }

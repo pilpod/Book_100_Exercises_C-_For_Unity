@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 139989288}
   - component: {fileID: 139989287}
   - component: {fileID: 139989292}
-  - component: {fileID: 139989291}
+  - component: {fileID: 139989293}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -185,7 +185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8de576e1405ef2649acb333c533bc7c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -230,20 +230,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &139989291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139989286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f9be6b6e7edb9148b3319123bf46535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicMaterial: {fileID: 13400000, guid: 97cf012c2c1e49c4fa852417424e3ccd, type: 2}
-  velocity: 100
 --- !u!54 &139989292
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -271,6 +257,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &139989293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139989286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49164cfbd82d2745a3c887baf56ad3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicMaterial: {fileID: 13400000, guid: 97cf012c2c1e49c4fa852417424e3ccd, type: 2}
+  velocity: 10
 --- !u!1 &316396755
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 316396756}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
