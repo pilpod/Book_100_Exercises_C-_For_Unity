@@ -266,11 +266,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 139989286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b49164cfbd82d2745a3c887baf56ad3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3718bd2ee56cfd64f8cb38c7140b672b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  physicMaterial: {fileID: 13400000, guid: 97cf012c2c1e49c4fa852417424e3ccd, type: 2}
-  velocity: 10
+  PhysicMaterial: {fileID: 13400000, guid: 97cf012c2c1e49c4fa852417424e3ccd, type: 2}
 --- !u!1 &316396755
 GameObject:
   m_ObjectHideFlags: 0
