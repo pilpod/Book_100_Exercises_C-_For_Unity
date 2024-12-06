@@ -6,6 +6,7 @@ TagManager:
   tags:
   - desaparecer
   - ground
+  - newton
   layers:
   - Default
   - TransparentFX
