@@ -12,15 +12,27 @@ public class Ex_39 : MonoBehaviour
      * código aunque se añadan o quiten objetos de la escena.
      */
 
+    public GameObject[] gameObjects;
+    private bool gravityEnabled = true;
+    private readonly string objectTag = "newton";
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObjects = GameObject.FindGameObjectsWithTag(objectTag);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            foreach (var newton in gameObjects)
+            {
+                Rigidbody rb = newton.GetComponent<Rigidbody>();
+
+                if (rb != null) rb.useGravity = gravityEnabled;
+            }
+        }
     }
 }
