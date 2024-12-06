@@ -10,15 +10,23 @@ public class Ex_37 : MonoBehaviour
      * hacia arriba y hacia la derecha.
      */
 
+    Rigidbody rb;
+    private float m_Thrust = 10f;
+    private float _mass = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        rb.mass = _mass;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            rb.AddForce(new Vector3(1,1) * m_Thrust, ForceMode.Impulse);
+        }
     }
 }
