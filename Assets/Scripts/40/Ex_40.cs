@@ -9,6 +9,9 @@ public class Ex_40 : MonoBehaviour
      * hemos hecho clic.
      */
 
+    [SerializeField]
+    private Camera _camera;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,15 @@ public class Ex_40 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                GameObject gameObject = hit.transform.gameObject;
+                Debug.Log(hit.point + " / " + gameObject.name);
+            }
+        }
     }
 }
